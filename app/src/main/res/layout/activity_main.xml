@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.example.alexandr.a10rubles.MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:alpha="0.5"
+        android:text="ЗАНЯТЬ"
+        android:textColor="@color/colorTitle"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/txtTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.5"
+        android:text="на 3 дня"
+        android:textAlignment="center"
+        android:textColor="@color/colorTitle"
+        android:textSize="22sp" />
+
+    <me.itangqi.waveloadingview.WaveLoadingView
+        android:id="@+id/waveLoadingView"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_below="@id/txtTerm"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="50dp"
+        android:clickable="true"
+        app:wlv_borderColor="@color/colorMainButton"
+        app:wlv_borderWidth="3dp"
+        app:wlv_round_rectangle="true"
+        app:wlv_shapeType="circle"
+        app:wlv_titleCenterColor="@color/colorBackground"
+        app:wlv_titleCenterSize="144sp"
+        app:wlv_triangle_direction="north"
+        app:wlv_waveColor="@color/colorMainButton" />
+
+    <TextView
+        android:id="@+id/txtWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTitle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtTitle"
+        android:layout_marginBottom="20dp"
+        android:alpha="0.5"
+        android:clickable="true"
+        android:text="хочешь заработать?"
+        android:textColor="@color/colorTitle"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnRepay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMainButton"
+        android:text="Погасить досрочно"
+        android:textColor="@color/colorBackground"
+        android:textSize="16sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"></Button>
+
+</RelativeLayout>
